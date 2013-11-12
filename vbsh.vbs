@@ -266,9 +266,9 @@ end function
 private function LogDebug(msg)
     if LogLevel >= 5 then
         if LogPrefix = True then
-            wscript.echo "DEBUG: " & cstr(msg)
+            print("DEBUG: " & cstr(msg))
         else
-            wscript.echo cstr(msg)
+            print(cstr(msg))
         end if
     end if
 end function
@@ -277,9 +277,9 @@ end function
 private function LogInfo(msg)
     if LogLevel >= 4 then
         if LogPrefix = True then
-            wscript.echo "INFO: " & cstr(msg)
+            print("INFO: " & cstr(msg))
         else
-            wscript.echo cstr(msg)
+            print(cstr(msg))
         end if
     end if
 end function
@@ -288,9 +288,9 @@ end function
 private function LogWarning(msg)
     if LogLevel >= 3 then
         if LogPrefix = True then
-            wscript.echo "WARNING: " & cstr(msg)
+            print("WARNING: " & cstr(msg))
         else
-            wscript.echo cstr(msg)
+            print(cstr(msg))
         end if
     end if
 end function
@@ -299,9 +299,9 @@ end function
 private function LogError(msg)
     if LogLevel >= 2 then
         if LogPrefix = True then
-            wscript.echo "ERROR: " & cstr(msg)
+            print("ERROR: " & cstr(msg))
         else
-            wscript.echo cstr(msg)
+            print(cstr(msg))
         end if
     end if
 end function
@@ -310,9 +310,9 @@ end function
 private function LogCritical(msg)
     if LogLevel >= 1 then
         if LogPrefix = True then
-            wscript.echo "CRITICAL: " & cstr(msg)
+            print("CRITICAL: " & cstr(msg))
         else
-            wscript.echo cstr(msg)
+            print(cstr(msg))
         end if
     end if
 end function
