@@ -218,9 +218,7 @@ private function ParseInputArgs()
     LogDebug("ParseInputArgs()")
 
     ' Parse all input arguments and set variables
-    args_len = wscript.Arguments.count
-
-    for i = 0 to args_len - 1
+    for i = 0 to wscript.Arguments.count - 1
         a = wscript.arguments.Item(i)
         if a = "--help" then
             ' Using docopt cli specs "https://github.com/docopt/docopt"
